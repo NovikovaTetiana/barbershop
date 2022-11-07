@@ -10,9 +10,37 @@
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: var(--background-color);
     font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 1200;
+    margin: 0;
+    padding: 0 15px;
+    outline: 2px solid red;
 }
 
 .link {
@@ -20,6 +48,8 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -40,12 +70,29 @@ body {
 /* _____________________________________HEADER_____________________________ */
 
 .header {
-    background-color: rgb(36, 13, 64);
+    display: flex;
+    align-items: center;
+    background-color: rgb(175, 138, 220);
+
 }
 
-.nav {}
+.header-container {
+    display: flex;
+}
 
-.nav-list {}
+.logo {
+    margin-right: 131px;
+}
+
+.nav {
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+
+}
 
 .nav-item {}
 
@@ -67,6 +114,7 @@ body {
 }
 
 .header-link {
+    margin-right: 30px;
     font-weight: 600;
     font-size: 12px;
     line-height: calc(16 / 12);
@@ -103,9 +151,16 @@ body {
 
 .hero {
     background: rgba(25, 28, 38, 0.2);
+    background-image: url(../images/hero/slider-hero-1.jpg);
+    background-repeat: no-repeat;
+    padding: 272px 526px 208px 100px;
+
 }
 
-.hero-list {}
+.hero-list {
+    background-color: var(--background-color);
+    width: 100px;
+}
 
 .hero-item {}
 
@@ -143,11 +198,20 @@ body {
 }
 
 /* _____________________________________ABOUT_____________________________ */
-.about {}
+.about {
+    padding: 120px 0;
+}
 
-.about-list {}
+.about-list {
+    display: flex;
+    gap: 30px;
+}
 
 .about-item {}
+
+.about-container {
+    max-width: 470px;
+}
 
 .about-uptitle {
     color: var(--primery-text-color);
