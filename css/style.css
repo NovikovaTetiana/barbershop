@@ -82,6 +82,8 @@ body {
 
 .logo {
     margin-right: 131px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav {
@@ -149,11 +151,24 @@ body {
 
 /* _____________________________________HERO_____________________________ */
 
+
+.hero-container {
+    display: flex;
+}
+
 .hero {
     background: rgba(25, 28, 38, 0.2);
     background-image: url(../images/hero/slider-hero-1.jpg);
     background-repeat: no-repeat;
-    padding: 272px 526px 208px 100px;
+    background-size: cover;
+    padding: 272px 100px 208px 100px;
+    flex-grow: 1;
+
+}
+
+.hero-soc {
+    background-color: var(--background-color);
+    width: 100px;
 
 }
 
