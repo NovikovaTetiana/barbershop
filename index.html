@@ -20,10 +20,10 @@
     </a>
     <nav class="nav header-container">
       <ul class="nav-list list">
-        <li class="nav-item"><a class="nav-link current link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link link" href="#">Services and prices</a></li>
-        <li class="nav-item"><a class="nav-link link" href="#">Barbers</a></li>
-        <li class="nav-item"><a class="nav-link link" href="#">Contacts</a></li>
+        <li class="nav-item"><a class="nav-link current link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link link" href="#prices">Services and prices</a></li>
+        <li class="nav-item"><a class="nav-link link" href="#barbers">Barbers</a></li>
+        <li class="nav-item"><a class="nav-link link" href="#contacts">Contacts</a></li>
       </ul>
     </nav>
     <a class="header-link link" href="tel:+380441111111">+38 044 111 11 11</a>
@@ -53,7 +53,7 @@
     </section>
 
 
-    <section class="about container">
+    <section class="about container" id="about">
       <div class="about-foto">
         <ul class="about-list list">
           <li class="about-item"><img src="./images/about/best-1.jpg" width="270" height="445" alt="best"></li>
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <section class="prices container">
+    <section class="prices container" id="prices">
       <p class="prices-uptitle uptitle">Spend your time with the best masters</p>
       <h2 class="prices-title title">Services and prices</h2>
       <div class="prices-container">
@@ -141,37 +141,33 @@
       </div>
     </section>
 
-    <section class="barbers container">
+    <section class="barbers container" id="barbers">
       <p class="barbers-uptitle uptitle">For true enjoyers of the atmosphere</p>
       <h2 class="barbers-title title">Our barbers</h2>
       <ul class="barbers-list list">
-        <div class="barbers-card">
-          <li class="barbers-item">
-            <img src="./images/our-barbers/john-smith.jpg" width="370" height="346" alt="barber">
-            <div class="barbers-item-card">
-              <h3 class="barbers-heading">John Smith</h3>
-              <p class="barbers-text">Extreme Barber</p>
-            </div>
-          </li>
+
+        <li class="barbers-item">
+          <img src="./images/our-barbers/john-smith.jpg" width="370" height="346" alt="barber">
+          <div class="barbers-item-card">
+            <h3 class="barbers-heading">John Smith</h3>
+            <p class="barbers-text">Extreme Barber</p>
+          </div>
+        </li>
         </div>
-        <div class="barbers-card">
-          <li class="barbers-item">
-            <img src="./images/our-barbers/michele-doe.jpg" width="370" height="346" alt="barber">
-            <div class="barbers-item-card">
-              <h3 class="barbers-heading">Michele Doe</h3>
-              <p class="barbers-text">Extreme Barber</p>
-            </div>
-          </li>
-        </div>
-        <div class="barbers-card">
-          <li class="barbers-item">
-            <img src="./images/our-barbers/alan-black.jpg" width="370" height="346" alt="barber">
-            <div class="barbers-item-card">
-              <h3 class="barbers-heading">Alan Black</h3>
-              <p class="barbers-text">Extreme Barber</p>
-            </div>
-          </li>
-        </div>
+        <li class="barbers-item">
+          <img src="./images/our-barbers/michele-doe.jpg" width="370" height="346" alt="barber">
+          <div class="barbers-item-card">
+            <h3 class="barbers-heading">Michele Doe</h3>
+            <p class="barbers-text">Extreme Barber</p>
+          </div>
+        </li>
+        <li class="barbers-item">
+          <img src="./images/our-barbers/alan-black.jpg" width="370" height="346" alt="barber">
+          <div class="barbers-item-card">
+            <h3 class="barbers-heading">Alan Black</h3>
+            <p class="barbers-text">Extreme Barber</p>
+          </div>
+        </li>
       </ul>
     </section>
 
@@ -179,14 +175,14 @@
       <h2 class="portfolio-title">Portfolio</h2>
       <p class="portfolio-uptitle uptitle">In Latin, "barba" means "beard"</p>
       <ul class="portfolio-list list">
-        <li class="portfolio-list"><img src="./images/portfolio/beard-1.jpg" width="270" height="360" alt="beard"></li>
-        <li class="portfolio-list"><img src="./images/portfolio/beard-2.jpg" width="270" height="360" alt="beard"></li>
-        <li class="portfolio-list"><img src="./images/portfolio/beard-3.jpg" width="270" height="360" alt="beard"></li>
-        <li class="portfolio-list"><img src="./images/portfolio/beard-4.jpg" width="270" height="360" alt="beard"></li>
+        <li class="portfolio-item"><img src="./images/portfolio/beard-1.jpg" width="270" height="360" alt="beard"></li>
+        <li class="portfolio-item"><img src="./images/portfolio/beard-2.jpg" width="270" height="360" alt="beard"></li>
+        <li class="portfolio-item"><img src="./images/portfolio/beard-3.jpg" width="270" height="360" alt="beard"></li>
+        <li class="portfolio-item"><img src="./images/portfolio/beard-4.jpg" width="270" height="360" alt="beard"></li>
       </ul>
     </section>
 
-    <section class="contacts container">
+    <section class="contacts container" id="contacts">
       <h2 class="contacts-title title">Contacts</h2>
       <address class="address">
         <ul class="adress-list list">
@@ -200,6 +196,8 @@
           </li>
         </ul>
       </address>
+      <span class="contacts-schedule-title">Working hours</span>
+      <p class="contacts-schedule-text">Every day from 9:00 to 22:00</p>
     </section>
 
   </main>

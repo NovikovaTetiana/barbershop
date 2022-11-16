@@ -221,11 +221,12 @@ body {
 .about {
     padding: 120px 0;
     display: flex;
+    gap: 30px;
+
+
 }
 
-.about-foto {
-    margin-right: 30px;
-}
+.about-foto {}
 
 .about-list {
     display: flex;
@@ -258,7 +259,7 @@ body {
 }
 
 .about-text {
-    margin-bottom: 20px;
+    margin-bottom: 42px;
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
@@ -283,6 +284,9 @@ body {
 
 .prices-form {
     margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
 
 }
 
@@ -296,10 +300,20 @@ body {
     color: var(--secondary-text-color);
 }
 
-.prices-list {}
+.prices-list {
+    border: 1px solid #ffffff;
+    padding: 30px 20px;
+    width: calc((100% - 30px) / 2);
+}
 
 .prices-item {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+    margin-bottom: 0;
 }
 
 .prices-text {
@@ -324,7 +338,7 @@ body {
 /* _____________________________________SCHOOL_____________________________ */
 
 .school {
-    display: flex;
+
     padding: 120px 0;
 }
 
@@ -334,7 +348,13 @@ body {
 
 .school-list {}
 
-.school-item {}
+.school-item {
+    width: 170px;
+    height: 133px;
+    border: 1px solid #000000;
+    padding: 20px 24px;
+    text-align: center;
+}
 
 .school-count {
     font-weight: 700;
@@ -409,7 +429,9 @@ body {
     gap: 30px;
 }
 
-.barbers-item {}
+.barbers-item {
+    width: calc((100% - 60px) / 3);
+}
 
 .barbers-item-card {
     margin-top: 30px;
@@ -417,7 +439,7 @@ body {
 }
 
 .barbers-heading {
-    margin-bottom: 3px;
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: calc(25 / 18);
@@ -460,7 +482,12 @@ body {
 
 .portfolio-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+
+.portfolio-item {
+    width: calc((100% - 90px) / 4);
 }
 
 /* _____________________________________CONTACTS_____________________________ */
@@ -475,7 +502,9 @@ body {
     color: var(--secondary-text-color);
 }
 
-.address {}
+.address {
+    font-style: inherit;
+}
 
 .adress-list {}
 
@@ -493,6 +522,21 @@ body {
 .address-link:hover,
 .address-link:focus {
     font-weight: 700;
+}
+
+.contacts-schedule-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+.contacts-schedule-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
 }
 
 /* _____________________________________FOOTER_____________________________ */
